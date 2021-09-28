@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../imagenes/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  background-color: rgb(236, 236, 236);
+  /* position: fixed; */
+  font-size: 30px;
+}
+
+.logoimg {
+  height: 90px;
+  width: 280px;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+
+}
+
+.menu li a {
+  text-decoration: none;
+  color: goldenrod;
+  padding: 10px;
+}
+
+.menu ul li:hover {
+  background-color: darkcyan;
+  opacity: 0.6;
+  border-radius: 5px;
+}
+
+main {
+  /* especifica el tipo de metodo de posicionamiento
+    utilixzado para un elemento () */
+  position: relative;
+  /* top: 10px; */
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 75vh;
+}
+.gallery-container .gallery-item {
+  /* es una abreviatura para el flex-grow, flex-shrink, flex-bails, flex-basis
+     flex-grow:0;
+     flex-shrink:1;
+     flex-basis: auto;
+     hace que el elemento flexible sea flexible y estable la base flexible en 0,
+        */
+  flex: 1;
+  height: 100%;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: flex 0.5s ease-in-out;
+  
+}
+
+.gallery-item span {
+  color: aquamarine;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 20px 8px;
+  background-color: cadetblue;
+  opacity: 0.8;
+  transition: opacity 0.8s ease;
+  border-radius: 5px;
+}
+
+.gallery-container .gallery-item:hover span {
+  opacity: 0;
+}
+
+.gallery-container .gallery-item:hover {
+  flex: 5;
+}
+
+.gallery-container .gallery-item.g-item-1 {
+  background-image: url(../imagenes/aloeespiral.jpg);
+}
+
+.gallery-container .gallery-item.g-item-2 {
+  background-image: url(../imagenes/cactusdenavidad.jpg);
+}
+
+.gallery-container .gallery-item.g-item-3 {
+  background-image: url(../imagenes/rosario.jpg);
+}
+
+.gallery-container .gallery-item.g-item-4 {
+  background-image: url(../imagenes/arbol-de-jade.jpg);
+}
+
+.gallery-container .gallery-item.g-item-5 {
+  background-image: url(../imagenes/Echeveria-chihuahuensis.jpg);
+}
+
+.gallery-container .gallery-item.g-item-6 {
+  background-image: url(../imagenes/sedum-burrito.jpg);
+}
+
+.gallery-container .gallery-item.g-item-7 {
+  background-image: url(../imagenes/sansevieria-trifasciata-.jpg);
+}
+
+#variedades {
+  margin-top: 40px;
+  font-family: 'Bonheur Royale', cursive;
+  font-size: 55px;
+  text-align: center;
+  color: rgba(255, 140, 0, 0.692);
+}
+
+/* secciones de la izquierda */
+.informationizq {
+  display: inline-flex;
+  background-color: rgb(149, 241, 57);
+  opacity: 0.5;
+  margin: 100px 200px 0px 0px;
+}
+
+.informationizq p {
+  color: rgb(0, 0, 0);
+  max-width: 50%;
+  align-self: center;
+  padding-left: 0px;
+  line-height: 23px;
+  font-size: 18px;
+  font-family: "Dancing Script", cursive;
+}
+
+.titulo {
+  font-weight: normal;
+  color: chocolate;
+  font-family: "Merriweather", serif;
+}
+
+.informationizq img {
+  max-width: 40%;
+  height: 350px;
+  padding: 0px 60px 0px 0px;
+  /* margin-top: 13px; */
+}
+
+/* secciones de la derecha */
+.informationder {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgb(98, 255, 216);
+  opacity: 0.5;
+  margin: 100px 0px 0px 200px;
+}
+
+.informationder p {
+  color: rgb(0, 0, 0);
+  max-width: 50%;
+  align-self: center;
+  margin-left: 30px;
+  padding-left: 0px;
+  line-height: 23px;
+  font-size: 18px;
+  font-family: "Dancing Script", cursive;
+}
+
+.titulo {
+  font-size: 20px;
+  font-weight: normal;
+  color: chocolate;
+  font-family: "Merriweather", serif;
+}
+
+.informationder img {
+  max-width: 50%;
+  height: 300px;
+  margin: 0px 0px 0px 50px;
+}
+
+.videos video{
+  width: 200px;
+  /* margin: 30px 15px; */
+}
+.videos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.videos .diferent{
+  margin-top: 150px;
+  margin-left:  20px;
+  margin-right:  20px;
+
+}
+
+h1{
+  margin-top: 30px;
+  margin-left: 15px;
+  font-size: 55px;
+  font-family: 'Bonheur Royale', cursive;
+  color: rgba(210, 105, 30, 0.733);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.about {
+  max-width: 300px;
+  max-height: 400px;
+  color: aliceblue;
+  box-shadow: 0 0 0 1px #fff, 0 15px 50px;
+  padding: 15px 20px;
+}
+
+.about h1 {
+  color: chartreuse;
+  padding: 20px 30px;
+}
+
+/* .obs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.qr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width:200px;
+  border-radius: 30px;
+  box-shadow: 0 0 15px 3px #fff, 0 15px 50px;
+  margin-top: 20px;
+}
+
+h3 {
+  border: 1px solid;
+  color: coral;
+  text-align: center;
+ 
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 15px 3px #fff, 0 15px 50px;
+  color: azure;
+  padding: 30px 30px;
+}
+
+.info img{
+  height: 20px;
+  width: 20px;
+  border-radius: 30px;
+  padding: 10px 0px;
+
+
+}
+
+.firmalogo {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+}
+
+.firmalogo img {
+  max-height: 50px;
+}
+
+.milogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.firma {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(127, 255, 212, 0.383);
+  width: 600px;
+}
+
+.firma img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin-left: 10px;
+}
+
+.firma p {
+  color: aliceblue;
+  max-width: 50%;
+}
